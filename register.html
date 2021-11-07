@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+</head>
+<body>
+    <div id="main" class="main--login">
+        <div id="header" class="header--login">
+            <div class="header grid wide space-between item-center">
+                <div class="header_logo">
+                    <img src="./img/Pic_main.png" alt="" class="header_logo-img">
+                </div>
+                <div class="header_question">
+                    <span>Hổ trợ ?</span>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="grid wide">
+            <form action="" id="form" class="form--login" method="POST">
+                <div class="login_header">
+                    <h1>Đăng ký</h1>
+                </div>
+                <div class="login_container">
+                    <div class="login_container-input">
+                        <h2>Địa chỉ email</h2>
+                        <input id="email" type="email" placeholder="Nhập địa chỉ email">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="login_container-input">
+                        <h2>Số điện thoại</h2>
+                        <input id="telephone" type="tel" placeholder="Nhập số điện thoại">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="login_container-input">
+                        <h2>Tên đăng nhập</h2>
+                        <input id="fullname" type="text" placeholder="Nhập tên tài khoản">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="login_container-input">
+                        <h2>Mật khẩu <span>(Tối thiểu 8 ký tự)</span></h2>
+                        <input id="password" type="password" placeholder="Nhập mật khẩu">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="login_container-input">
+                        <h2>Xác nhận mật khẩu</h2>
+                        <input id="password-submit" type="password" placeholder="Nhập lại mật khẩu">
+                        <span class="form-message"></span>
+                    </div>
+                    <button class="form-submit">Đăng ký</button>
+                    <h4>Bạn có tài khoản Organic store rồi? <a href="./login.html">Đăng nhập</a></h4>
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <div class="footer grid wide">
+                <div class="footer_heading">
+                    <h1>ORGANIC STORE</h1>
+                </div>
+                <div class="row">
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2>Giới thiệu về chúng tôi</h2>
+                        <ul class="footer_list-list">
+                            <a href="#" class="footer_items">Orgnic Store chuyên cung cấp các loại rau củ quả sạch toàn quốc</a>
+                            <a href="#" class="footer_items">Địa chỉ: Trường đại học Cần Thơ</a>
+                            <a href="#" class="footer_items"></a>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2>Dịch vụ</h2>
+                        <ul class="footer_list-list">
+                            <a href="#" class="footer_items">Chính sách giao hàng</a>
+                            <a href="#" class="footer_items">Điều khoản và điều kiện</a>
+                            <a href="#" class="footer_items">Thanh toán</a>
+                            <a href="#" class="footer_items">Chứng nhận an toàn</a>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2>Hổ trợ khách hàng</h2>
+                        <ul class="footer_list-list">
+                            <a href="#" class="footer_items">Thông tin về Organic Store</a>
+                            <a href="#" class="footer_items">Hướng dẫn mua bán</a>
+                            <a href="#" class="footer_items">Bảo mật</a>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2>Liên hệ</h2>
+                        <ul class="footer_list-list">
+                            <a href="#" class="footer_items">Facebook</a>
+                            <a href="#" class="footer_items">Zalo</a>
+                            <a href="#" class="footer_items">Gmail</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/validation.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript">
+       Validator({
+            form: '#form',
+            errorSelector: '.form-message',
+            formGroupSelector: '.login_container-input',
+            rules: [
+                Validator.isEmail('#email'),
+                Validator.isTelephone('#telephone'),
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#password'),
+                Validator.isComfirmPassword('#password-submit', 12345678)
+            ],
+            onSubmit: function(data){
+                console.log(data);
+                window.location.href = "./login.html";
+            }
+        })
+    </script>
+</body>
+</html>
