@@ -24,7 +24,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/img/Nen2.jpg"); 
+    background-image: url("./img/Nen2.jpg"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -35,7 +35,7 @@ html {
 }
 
 #main.main--login {
-    background-image: url("/img/Nen1.jpg"); 
+    background-image: url("./img/Nen1.jpg"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
