@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Blog Dinh Dưỡng</title>
+    <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        .content_navbar{
+            margin-top: 40px;
+        }
+        #nutrition__content{
+            background-color: rgba(255,255,255,0.1);
+            width: 100%;
+            height: max-content ;
+        }
+        #nutrition__left {
+            background-color: rgb(255 255 255 / 40%);
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        
+
+        #nutrition__right{
+            background-color: rgb(255 255 255 / 40%);
+            width: 30%;
+            height: 100% ;
+            float: right;
+            border-left: 1px inset greenyellow;
+        }
+
+        .nutri__blog{
+            height: 266px;
+            margin: 30px 15px;
+            background-color: #fff;
+            box-shadow: 0 1px 11px -4px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px ;
+        }
+
+        .nutri__blog-left{
+            background-color: #fff;
+            width: 30%;
+            height: 100%;
+            margin-left: -12px;
+            float: left;
+            border-bottom-left-radius: 50px ;
+        }
+
+        .nutri__blog:hover{
+            /*transform: scale(1) rotate(1deg);*/
+            box-shadow: 1px 1px 4px 5px olivedrab;
+        }
+
+        .nutri__blog-right {
+            background-color: #fff;
+            width: 70%;
+            height: 100%;
+            float: right;
+            border-top-right-radius: 50px;
+            padding: 25px;
+        }
+
+
+
+        .nutri__title{
+            font-size: 20px;
+            margin: 30px 20px;
+            border-bottom: 1px solid green;
+        }
+        .nutri__title a{
+            color: rgb(8, 85, 8);
+            text-decoration: none;
+        }
+
+        .nutri__title a:hover{
+            cursor: pointer;
+            color: greenyellow;
+        }
+
+        .nutri__blog-right-title1{
+            color: rgb(13, 65, 13);
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 1px solid;
+        }
+        .nutri__blog-right-title2{
+            color: rgb(13, 65, 13);
+            font-size: 20px;
+            font-weight: lighter;
+            margin: 20px 0px;
+        }
+        .nutri__blog-right-title3{
+            color: rgb(13, 65, 13);
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: normal;
+            text-align: justify;
+            text-shadow: none;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: justify;
+        }
+
+        .nutri__btn{
+            background-color: #4af51f;
+            width: 110px;
+            height: 28px;
+            margin-top: 10px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            line-height: 28px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #4af51f;
+        }
+
+        .nutri__btn:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+
+        .nutri__btn a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nutri__right-main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            background-color: rgba(204, 204, 204, .7);
+            /* margin: 10px 10px 15px 15px; */
+            margin: 50px calc(50% - 300px);
+            border-radius: 15px;
+            box-shadow: 0 1px 11px -5px;
+
+        }
+
+        .nutri__right-main:hover {
+            background-color: #c7ff7294;
+        }
+
+        .nutri__right-title{
+            font-size: 20px;
+            color: green;
+            /* border-bottom: 1px solid green; */
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nutri__right-content{
+            color: rgb(1, 46, 9);
+            font-size: 15px;
+            font-weight: normal;
+            text-align: -webkit-center;
+            text-shadow: none;
+            padding: 0px 15px 15px 15px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .nutri__right-main img {
+            /* display: flex; */
+            /* justify-content: center; */
+            width: 200px;
+            height: 102px;
+            margin: 1px 31px;
+        }
+
+        img#user {
+            width: 90px;
+            height: 81px;
+            margin: 0 90px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header grid wide">
+                <a href="/index.html" class="header_logo">
+                    <img src="./img/Pic_main.png" alt="" class="header_logo-img">
+                </a>
+                <div class="header_container">
+                    <div class="header_container-navbar">
+                        <a href="./intro.html" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-home"></i>
+                            Giới thiệu
+                        </a>
+                        <a href="#" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <a href="#" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-question-circle"></i>
+                            Hỗ trợ
+                        </a>
+                        <a href="./register.html" class="container-navbar_item container-navbar_item--line navbar-user">Đăng ký</a>
+                        <a href="./login.html" class="container-navbar_item navbar-out">Đăng nhập</a>
+                    </div>
+                    <div class="modal__navbar">
+                        <h1 class="modal__navbar-heading">ORGANIC STORE</h1>
+                        <i class="modal__navbar-bars fas fa-bars"></i>
+                        <div class="modal__navbar-contaner display--none">
+                            <div class="modal__navbar-box">
+                                <div class="modal__navbar-box-header">
+                                    <i class="img-user  fas fa-user"></i>
+                                    <div>
+                                        <h1>Tài khoản</h1>
+                                        <h2 class="user-name">Đăng nhập</h2>
+                                    </div>
+                                    <i class=" box-header-close far fa-times-circle"></i>
+                                </div>
+                                <div class="modal__navbar-box-content">
+                                    <a href="./index.html">Trang chủ</a>
+                                    <a href="#">Thông báo</a>
+                                    <a href="#">Hổ trợ</a>
+                                    <a href="./intro.html">Giới thiệu</a>
+                                    <a href="./nutrition.html">Blog dinh dưỡng</a>
+                                    <a href="./contact.html">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_container-search">
+                        <input type="text" class="search_input">
+                        <button class="search_btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search_content">
+                            <a href="#" class="search_content-items">Rau xanh sạch</a>
+                            <a href="#" class="search_content-items">Hoa quả tươi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_cart">
+                    <a href="./cart.html">
+                        <img src="./img/Cart_logo1.png" alt="cart" class="header_cart-logo">
+                    </a>
+                    <div class="cart_container">
+                        <div class="container_content">
+                            <img src="./img/no-item.png" alt="" width="250px">
+                            <p align="center">Không có sản phẩm</p>
+                        </div>
+                        <div class="container_footer">
+                            <button class="show-cart">Xem giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--container-->
+        <div id="container">
+            <div class="container grid wide">
+                
+                <div id="container_content">
+                    <div class="content_navbar">
+                        <div class="content_navbar-list">
+                            <a href="#container_content" class="content_navbar-item">
+                                <i class="fas fa-bars"></i>
+                                Danh mục
+                                <ul class="navbar-item_list">
+                                    <li class="navbar-item_list-item">Tất cả sản phẩm</li>
+                                    <li class="navbar-item_list-item">Bắp Và Bông Cải</li>
+                                    <li class="navbar-item_list-item">Bầu Và Bí</li>
+                                    <li class="navbar-item_list-item">Củ, Quả Tươi</li>
+                                    <li class="navbar-item_list-item">Rau Xanh</li>
+                                    <li class="navbar-item_list-item">Ớt, Ớt Chuông</li>
+                                    <li class="navbar-item_list-item">Nấm Tươi</li>
+                                    <li class="navbar-item_list-item">Khoai</li>
+                                </ul>
+                            </a href="#">
+                            <a href="./nutrition.html" class="content_navbar-item">
+                                <i class="fab fa-nutritionix"></i>
+                                Blog dinh dưỡng
+                            </a href="#">
+                        </div>
+                        <div class="content_navbar-list">
+                            <a href="./index.html" class="content_navbar-item">
+                                <i class="fas fa-home"></i>
+                                Trang chủ
+                            </a href="#">
+                            <a href="contact.html" class="content_navbar-item">
+                                <i class="fab fa-facebook-messenger"></i>
+                                Liên hệ
+                            </a href="#">
+                        </div>
+                    </div>
+                </div>
+
+                <!--nutrition__content-->
+                <div id="nutrition__content row">
+                    <div id="nutrition__left row">
+                        <div class="nutri__title">
+                            <a href=""><b> Blog Dinh Dưỡng</b></a>
+                        </div>
+                        <div class="nutri__blog col c-12 l-12 m-12">
+                            <div class="nutri__blog-left" style="background-image: url(./img/nutrition_img1.jpg); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+                            <div class="nutri__blog-right">
+                                <div class="nutri__blog-right-title1">
+                                    Thành Phần Dinh Dưỡng
+                                </div>
+                                <div class="nutri__blog-right-title2">
+                                    Organic_Store
+                                </div>
+                                <div class="nutri__blog-right-title3">
+                                    Thành phần dinh dưỡng các loại rau, củ, quả, hạt, gạo, trái cây các loại, các loại quả, họ nhà đậu, khoai, sắn, ngô... và các thực phẩm ăn hàng ngày khác. Rau củ có mấy loại? Chủng loại rau củ vô cùng phong phú, vì vậy phương pháp phân loại cũng không giống nhau. Căn cứ vào hàm lượng dinh dưỡng cao hay thấp của rau củ, các nhà khoa học đã chia rau củ làm bốn loại khác nhau. Đây là...
+                                </div>
+                                
+                                <div class="nutri__btn">
+                                    <a href="">Đọc tiếp -></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutri__blog col c-12 l-12 m-12">
+                            <div class="nutri__blog-left" style="background-image: url(./img//nutrition_img2.jpg); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+                                <div class="nutri__blog-right">
+                                    <div class="nutri__blog-right-title1">
+                                        Các Món Ăn Chế Biến Từ Rau, Quả Đơn Giản
+                                    </div>
+                                    <div class="nutri__blog-right-title2">
+                                        Organic_Store
+                                    </div>
+                                    <div class="nutri__blog-right-title3">
+                                        Rau củ quả luôn rất quan trọng  thực đơn bữa cơm gia đình hàng ngày, một bữa cơm không rau toàn thịt cá sẽ rất ngán hoặc món ăn từ rau củ của bạn lặp đi lặp lại sẽ khiến cho bữa cơm gia đình mình tẻ nhạt.Với giá trị dinh dưỡng cao cùng nhiều lợi ích tuyệt vời đối với sức khỏe mà rau mầm được rất nhiều người lựa chọn cho các bữa ăn hàng ngày.
+                                    </div>
+                                    
+                                    <div class="nutri__btn">
+                                        <a href="">Đọc tiếp -></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="nutrition__right col c-12 l-12 m-12">
+                            <div class="nutri__title">
+                                <a href=""><b> Giới Thiệu Về Chúng Tôi</b></a>
+                            </div>
+                            <div class="nutri__right-main">
+                                <div class="nutri__right-title">
+                                    Organic_Store
+                                </div>
+                                <img src="./img/Pic_main.png" alt="" >
+                                <div class="nutri__right-content">
+                                    Chúng tôi mong muốn mang đến sự nhanh chóng và tiện lợi tối đa khi mua sắm đến cho khách hàng bằng việc đưa hệ thống siêu thị Organic store phủ rộng khắp mọi khu vực kể cả vùng nông thôn. Bên cạnh đó, chúng tôi cũng tập trung phát triển kênh mua sắm online trên website OrganicStore.com để phục vụ cho mọi đối tượng, đặc biệt là nhóm khách hàng trẻ.
+                                </div>
+                            </div>
+                            <div class="nutri__right-main">
+                                <div class="nutri__right-title">
+                                    Thực Hiện Bởi
+                                </div>
+                                <img id="user" src="./img/user.png" alt="">
+                                <div class="nutri__right-content">
+                                    Chung Phát Tiến - B1910000
+                                    <br>
+                                    Nguyễn Thị Thanh Thùy - B1910151
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--end nutrition__content-->
+                    
+
+                </div> 
+
+
+            </div>
+
+        <div id="footer">
+            <div class="footer grid wide">
+                <div class="footer_heading">
+                    <h1>ORGANIC STORE</h1>
+                </div>
+                <div class="row">
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2><a href="intro.html">Giới thiệu về chúng tôi</a></h2>
+                        <ul class="footer_list-list">
+                            <li class="footer_items">Organic Store chuyên cung cấp các loại rau, củ, quả sạch toàn quốc.</li>
+                            <li class="footer_items">Địa chỉ: Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ.</li>
+                            <li class="footer_items"></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2><a href="">Dịch vụ</a></h2>
+                        <ul class="footer_list-list">
+                            <li class="footer_items">Chính sách giao hàng</li>
+                            <li class="footer_items">Điều khoản và điều kiện</li>
+                            <li class="footer_items">Thanh toán</li>
+                            <li class="footer_items">Chứng nhận an toàn</li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2><a href="">Hổ trợ khách hàng</a></h2>
+                        <ul class="footer_list-list">
+                            <li class="footer_items">Thông tin về Organic Store</li>
+                            <li class="footer_items">Hướng dẫn mua bán</li>
+                            <li class="footer_items">Bảo mật</li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col c-12 m-6 l-3">
+                        <h2><a href="contact.html">Liên hệ</a></h2>
+                        <ul class="footer_list-list">
+                            <li class="footer_items">Facebook</li>
+                            <li class="footer_items">Zalo</li>
+                            <li class="footer_items">Gmail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+</body>
+</html>

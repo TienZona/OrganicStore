@@ -97,14 +97,12 @@ function Validator(option){
             }else{
                 selectorRules[rule.selector] = [rule.test];
             }
-
             var inputElements = formElement.querySelectorAll(rule.selector);
             Array.from(inputElements).forEach(function(inputElement){
                 var formMessage = getParent(inputElement, option.formGroupSelector).querySelector(option.errorSelector);
     
                 if(inputElement){
                     inputElement.onblur = function(){
-                        var errorMessage = rule.test(inputElement.value);
                         validate(inputElement, rule);
                     }
         
@@ -158,11 +156,11 @@ Validator.isPassword = function(selector, min){
     }
 }
 
-Validator.isComfirmPassword = function(selector, password){
+Validator.isComfirm= function(selector, getConfirmValue){
     return {
         selector: selector,
         test: function(value){
-            return true ? undefined : 'Mật khẩu không khớp';
+            return getConfirmValue() === value ? undefined : 'Mật khẩu không khớp';
         }
     }
 }

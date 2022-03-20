@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Đăng Nhập</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -20,11 +21,11 @@
     <div id="main" class="main--login">
         <div id="header" class="header--login">
             <div class="header grid wide space-between item-center">
-                <div class="header_logo">
+                <a href="/index.html" class="header_logo">
                     <img src="./img/Pic_main.png" alt="" class="header_logo-img">
-                </div>
+                </a>
                 <div class="header_question">
-                    <span>Hổ trợ ?</span>
+                    <span>Hỗ trợ ?</span>
                 </div>
             </div>
         </div>
@@ -74,42 +75,43 @@
                 </div>
                 <div class="row">
                     <div class="footer_list col c-12 m-6 l-3">
-                        <h2>Giới thiệu về chúng tôi</h2>
+                        <h2><a href="intro.html">Giới thiệu về chúng tôi</a></h2>
                         <ul class="footer_list-list">
-                            <a href="#" class="footer_items">Orgnic Store chuyên cung cấp các loại rau củ quả sạch toàn quốc</a>
-                            <a href="#" class="footer_items">Địa chỉ: Trường đại học Cần Thơ</a>
-                            <a href="#" class="footer_items"></a>
+                            <li class="footer_items">Organic Store chuyên cung cấp các loại rau, củ, quả sạch toàn quốc.</li>
+                            <li class="footer_items">Địa chỉ: Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ.</li>
+                            <li class="footer_items"></li>
                         </ul>
                     </div>
                     <div class="footer_list col c-12 m-6 l-3">
-                        <h2>Dịch vụ</h2>
+                        <h2><a href="">Dịch vụ</a></h2>
                         <ul class="footer_list-list">
-                            <a href="#" class="footer_items">Chính sách giao hàng</a>
-                            <a href="#" class="footer_items">Điều khoản và điều kiện</a>
-                            <a href="#" class="footer_items">Thanh toán</a>
-                            <a href="#" class="footer_items">Chứng nhận an toàn</a>
+                            <li class="footer_items">Chính sách giao hàng</li>
+                            <li class="footer_items">Điều khoản và điều kiện</li>
+                            <li class="footer_items">Thanh toán</li>
+                            <li class="footer_items">Chứng nhận an toàn</li>
                         </ul>
                     </div>
                     <div class="footer_list col c-12 m-6 l-3">
-                        <h2>Hổ trợ khách hàng</h2>
+                        <h2><a href="">Hổ trợ khách hàng</a></h2>
                         <ul class="footer_list-list">
-                            <a href="#" class="footer_items">Thông tin về Organic Store</a>
-                            <a href="#" class="footer_items">Hướng dẫn mua bán</a>
-                            <a href="#" class="footer_items">Bảo mật</a>
+                            <li class="footer_items">Thông tin về Organic Store</li>
+                            <li class="footer_items">Hướng dẫn mua bán</li>
+                            <li class="footer_items">Bảo mật</li>
                         </ul>
                     </div>
                     <div class="footer_list col c-12 m-6 l-3">
-                        <h2>Liên hệ</h2>
+                        <h2><a href="contact.html">Liên hệ</a></h2>
                         <ul class="footer_list-list">
-                            <a href="#" class="footer_items">Facebook</a>
-                            <a href="#" class="footer_items">Zalo</a>
-                            <a href="#" class="footer_items">Gmail</a>
+                            <li class="footer_items">Facebook</li>
+                            <li class="footer_items">Zalo</li>
+                            <li class="footer_items">Gmail</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="./js/data.js"></script>
     <script type="text/javascript" src="./js/validation.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript">
@@ -123,8 +125,12 @@
                 Validator.isPassword('#password', 8)
             ],
             onSubmit: function(data){
-                console.log(data);
-                window.location.href = "./index.html";
+                if(checkAccount(data)){
+                    setUser(data);
+                    window.location.href = "./index.html";
+                }else{
+                    alert('Tên đăng nhập hoặc mật khẩu không hợp lệ');
+                }
             }
         })
     </script>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <title>Giới Thiệu</title>
+    <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        .content_navbar{
+            margin-top: 40px;
+        }
+        #intro__content{
+            background-color: rgba(255,255,255,0.1);
+            width: 100%;
+            height: max-content ;
+        }
+        #intro__left {
+            background-color: #fff;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        
+
+        #intro__right{
+            background-color: rgb(255 255 255 / 40%);
+            width: 30%;
+            height: 100% ;
+            float: right;
+            border-left: 1px inset greenyellow;
+        }
+
+        
+
+        #intro__left-intro{
+            font-size: 15px;
+            padding: 20px;
+        }
+        
+        #intro__left-target{
+            font-size: 15px;
+            padding: 20px;
+        }
+
+        #intro__left-intro img {
+            padding: 0 12%;
+        }
+
+        #intro__left-target img {
+            padding: 0 12%;
+        }
+
+        .intro__title{
+            font-size: 20px;
+            margin: 30px 20px;
+            border-bottom: 1px solid green;
+            text-align: center;
+        }
+
+        .intro__title a{
+            color: rgb(8, 85, 8);
+            text-decoration: none;
+        }
+
+        .intro__title a:hover{
+            cursor: pointer;
+            color: greenyellow;
+        }
+
+        .intro__left-span{
+            padding: 0 20px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .intro__right-main{
+            background-color: rgba(159, 248, 161, 0.6);
+            /* margin: 10px 10px 15px 15px; */
+            margin: 10px 15px;
+            border-radius: 15px;
+            box-shadow: 0 1px 11px -5px;
+
+        }
+
+        .intro__right-main ul{
+            padding: 0 10px 10px 40px;
+            font-size: 15px;
+        }
+
+        .intro__right-main li{
+            list-style: none;
+        }
+
+        .intro__right-main li a{
+            text-decoration: none;
+            color: rgb(1, 46, 9);
+            line-height: 1.5;
+        }
+
+        .intro__right-main li:hover a{
+            color: rgb(91, 175, 34);
+        }
+
+        .intro__right-main:hover {
+            background-color: #c7ff7294;
+        }
+
+        .intro__right-title{
+            font-size: 20px;
+            color: green;
+            /* border-bottom: 1px solid green; */
+            padding: 15px;
+            text-align: center;
+        }
+
+        .intro__right-content{
+            color: rgb(1, 46, 9);
+            font-size: 15px;
+            font-weight: normal;
+            text-align: -webkit-center;
+            text-shadow: none;
+            padding: 0px 15px 15px 15px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .intro__right-main img {
+            /* display: flex; */
+            /* justify-content: center; */
+            width: 200px;
+            height: 102px;
+            margin: 1px 31px;
+        }
+
+        img#user {
+            width: 90px;
+            height: 81px;
+            margin: 0 90px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header grid wide">
+                <a href="/index.html" class="header_logo">
+                    <img src="./img/Pic_main.png" alt="" class="header_logo-img">
+                </a>
+                <div class="header_container">
+                    <div class="header_container-navbar">
+                        <a href="./intro.html" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-home"></i>
+                            Giới thiệu
+                        </a>
+                        <a href="#" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <a href="#" class="container-navbar_item container-navbar_item--line">
+                            <i class="fas fa-question-circle"></i>
+                            Hỗ trợ
+                        </a>
+                        <a href="./register.html" class="container-navbar_item container-navbar_item--line navbar-user">Đăng ký</a>
+                        <a href="./login.html" class="container-navbar_item navbar-out">Đăng nhập</a>
+                    </div>
+                    <div class="modal__navbar">
+                        <h1 class="modal__navbar-heading">ORGANIC STORE</h1>
+                        <i class="modal__navbar-bars fas fa-bars"></i>
+                        <div class="modal__navbar-contaner display--none">
+                            <div class="modal__navbar-box">
+                                <div class="modal__navbar-box-header">
+                                    <i class="img-user  fas fa-user"></i>
+                                    <div>
+                                        <h1>Tài khoản</h1>
+                                        <h2 class="user-name">Đăng nhập</h2>
+                                    </div>
+                                    <i class=" box-header-close far fa-times-circle"></i>
+                                </div>
+                                <div class="modal__navbar-box-content">
+                                    <a href="./index.html">Trang chủ</a>
+                                    <a href="#">Thông báo</a>
+                                    <a href="#">Hổ trợ</a>
+                                    <a href="./intro.html">Giới thiệu</a>
+                                    <a href="./nutrition.html">Blog dinh dưỡng</a>
+                                    <a href="./contact.html">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_container-search">
+                        <input type="text" class="search_input">
+                        <button class="search_btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search_content">
+                            <a href="#" class="search_content-items">Rau xanh sạch</a>
+                            <a href="#" class="search_content-items">Hoa quả tươi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_cart">
+                    <a href="./cart.html">
+                        <img src="./img/Cart_logo1.png" alt="cart" class="header_cart-logo">
+                    </a>
+                    <div class="cart_container">
+                        <div class="container_content">
+                            <img src="./img/no-item.png" alt="" width="250px">
+                            <p align="center">Không có sản phẩm</p>
+                        </div>
+                        <div class="container_footer">
+                            <button class="show-cart">Xem giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--container-->
+        <div id="container">
+            <div class="container grid wide">
+                
+                <div id="container_content">
+                    <div class="content_navbar">
+                        <div class="content_navbar-list">
+                            <a href="#container_content" class="content_navbar-item">
+                                <i class="fas fa-bars"></i>
+                                Danh mục
+                                <ul class="navbar-item_list">
+                                    <li class="navbar-item_list-item">Tất cả sản phẩm</li>
+                                    <li class="navbar-item_list-item">Bắp Cải Và Bông Cải</li>
+                                    <li class="navbar-item_list-item">Bầu Và Bí</li>
+                                    <li class="navbar-item_list-item">Củ, Quả Tươi</li>
+                                    <li class="navbar-item_list-item">Rau Xanh</li>
+                                    <li class="navbar-item_list-item">Ớt, Ớt Chuông</li>
+                                    <li class="navbar-item_list-item">Nấm Tươi</li>
+                                    <li class="navbar-item_list-item">Khoai</li>
+                                </ul>
+                            </a href="#">
+                            <a href="./nutrition.html" class="content_navbar-item">
+                                <i class="fab fa-nutritionix"></i>
+                                Blog Dinh Dưỡng
+                            </a href="#">
+                        </div>
+                        <div class="content_navbar-list">
+                            <a href="./index.html" class="content_navbar-item">
+                                <i class="fas fa-home"></i>
+                                Trang chủ
+                            </a href="#">
+                            <a href="contact.html" class="content_navbar-item">
+                                <i class="fab fa-facebook-messenger"></i>
+                                Liên hệ
+                            </a href="#">
+                        </div>
+                    </div>
+                </div>
+
+                <!--intro__content-->
+                <div id="intro__content">
+                    <div id="intro__left">
+                        <div id="intro__left-intro">
+                            <div class="intro__title">
+                                <a href=""><b>Giới Thiệu Về Organic Store</b></a>
+                            </div>
+
+                            <img src="./img/Nen2.jpg" alt="">
+
+                            <div class="intro__left-span">
+                                <span>
+                                    Organic Store được tạo ra nhằm mong muốn mang đến sự nhanh chóng và tiện lợi tối đa khi mua sắm đến cho khách hàng bằng việc đưa hệ thống siêu thị Organic store phủ rộng khắp mọi khu vực kể cả vùng nông thôn. Bên cạnh đó, chúng tôi cũng tập trung phát triển kênh mua sắm online trên website OrganicStore.com để phục vụ cho mọi đối tượng, đặc biệt là nhóm khách hàng trẻ.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="intro__left-target">
+                            <div class="intro__title">
+                                <a href=""><b>Mục Tiêu Của Organic Store</b></a>
+                            </div>
+
+                            <img src="./img/Nen1.jpg" alt="">
+
+                            <div class="intro__left-span">
+                                <span>
+                                    Trong thời gian dịch bệnh diễn biến phức tạp do COVID-19, việc mua bán tập trung đông người là điều không thể. Nhưng vấn đề thực phẩm là không thể thiếu đối với con người. Vì vậy, Organic Store sẽ là sự lựa chọn tốt nhất cho khách hàng.
+                                    <br>
+                                    Organica giúp mọi người dễ dàng tiếp cận hơn với các loại rau sạch hữu cơ, tự nhiên. Không chỉ cung cấp các sản phẩm hữu cơ, chúng tôi còn đem đến những thông tin hữu ích về sức khỏe mà thực phẩm hữu cơ đem lại cho con người và cộng đồng.
+                                    Khách hàng có thể xem <a href="/nutrition.html">Blog Dinh Dưỡng.</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                        <div id="intro__right">
+                            <div class="intro__right-main">
+                                <div class="intro__right-title">
+                                    Giới Thiệu
+                                </div>
+
+                                <ul>
+                                    <li><a href="#intro__left-intro">Giới Thiệu Về Organic Store</a></li>
+                                    <li><a href="#intro__left-target">Mục Tiêu Của Organic Store</a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="intro__right-main">
+                                <div class="intro__right-title">
+                                    Thực Hiện Bởi
+                                </div>
+                                <img id="user" src="./img/user.png" alt="">
+                                <div class="intro__right-content">
+                                    Chung Phát Tiến - B1910000
+                                    <br>
+                                    Nguyễn Thị Thanh Thùy - B1910151
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <!--end intro__content-->
+                    
+
+                </div> 
+
+
+            </div>
+
+            <div id="footer">
+                <div class="footer grid wide">
+                    <div class="footer_heading">
+                        <h1>ORGANIC STORE</h1>
+                    </div>
+                    <div class="row">
+                        <div class="footer_list col c-12 m-6 l-3">
+                            <h2><a href="intro.html">Giới thiệu về chúng tôi</a></h2>
+                            <ul class="footer_list-list">
+                                <li class="footer_items">Organic Store chuyên cung cấp các loại rau, củ, quả sạch toàn quốc.</li>
+                                <li class="footer_items">Địa chỉ: Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ.</li>
+                                <li class="footer_items"></li>
+                            </ul>
+                        </div>
+                        <div class="footer_list col c-12 m-6 l-3">
+                            <h2><a href="">Dịch vụ</a></h2>
+                            <ul class="footer_list-list">
+                                <li class="footer_items">Chính sách giao hàng</li>
+                                <li class="footer_items">Điều khoản và điều kiện</li>
+                                <li class="footer_items">Thanh toán</li>
+                                <li class="footer_items">Chứng nhận an toàn</li>
+                            </ul>
+                        </div>
+                        <div class="footer_list col c-12 m-6 l-3">
+                            <h2><a href="">Hổ trợ khách hàng</a></h2>
+                            <ul class="footer_list-list">
+                                <li class="footer_items">Thông tin về Organic Store</li>
+                                <li class="footer_items">Hướng dẫn mua bán</li>
+                                <li class="footer_items">Bảo mật</li>
+                            </ul>
+                        </div>
+                        <div class="footer_list col c-12 m-6 l-3">
+                            <h2><a href="contact.html">Liên hệ</a></h2>
+                            <ul class="footer_list-list">
+                                <li class="footer_items">Facebook</li>
+                                <li class="footer_items">Zalo</li>
+                                <li class="footer_items">Gmail</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+</body>
+</html>

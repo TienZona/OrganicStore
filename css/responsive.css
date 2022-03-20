@@ -1,0 +1,143 @@
+.modal__navbar {
+    display: none;
+}
+.modal__navbar-contaner {
+    display: none;
+}
+/* Mobile - Table */
+@media (max-width: 1023px){
+    ul.slick-dots li button {
+        display: none;
+    }
+    .header_cart {
+        position: fixed;
+        width: 60px;
+        right: 20px;
+        top: 20px;
+    }
+    .modal__navbar-heading {
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color:  #fff;
+        text-align: center;
+        padding: 15px;
+    }
+    .header_container-search {
+        margin-top: 50px;
+    }
+    .header_container-navbar {
+        display: none;
+    }
+    .modal__navbar {
+        display: block;
+    }
+    .modal__navbar-bars {
+        font-size: 28px;
+        float: right;
+        margin-top: 10px;
+        color: #fff;
+    }
+    .modal__navbar-bars:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .modal__navbar-contaner{
+        display: block;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .modal__navbar-box {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        animation: fadeInModal ease-in .3s;
+    }
+    @keyframes fadeInModal {
+        from{
+            transform: translateX(-100%);
+        }to{
+            transform: translateY(0);
+        }
+    }
+    .modal__navbar-box-header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(57, 201, 14);
+    }
+    .img-user {
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .modal__navbar-box-header h1 {
+        padding: 15px 0;
+        font-size: 16px;
+        color: #Fff;
+    }
+    .modal__navbar-box-header h2 {
+        font-size: 14px;
+        color: #fff;
+    }
+    .box-header-close  {
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 5px;
+        color: red;
+    }
+    .box-header-close:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    .modal__navbar-box-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal__navbar-box-content a{
+        font-size: 16px;
+        padding: 12px 20px;
+        color: #333;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .modal__navbar-box-content a:hover{
+        cursor: pointer;
+        background-color: #ccc;
+        color: rgba(28, 145, 13, 0.616);
+    }
+    .header_container-search {
+        width: 400px;
+    }
+    .search_content {
+        width: 400px;
+    }
+    .content_navbar {
+        width: auto;
+    }
+    .content_navbar-list {
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .footer {
+        padding: 20px;
+    }
+    .header_logo {
+        display: none;
+    }
+    .nutri__right-main {
+        width: 400px;
+        margin: 30px auto;
+    }
+}

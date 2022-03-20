@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Giỏ Hàng</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
 </head>
 <body>
     <div id="main">
@@ -37,6 +35,7 @@
                             <i class="fas fa-question-circle"></i>
                             Hỗ trợ
                         </a>
+                        
                         <a href="./register.html" class="container-navbar_item container-navbar_item--line navbar-user">Đăng ký</a>
                         <a href="./login.html" class="container-navbar_item navbar-out">Đăng nhập</a>
                     </div>
@@ -92,62 +91,104 @@
             </div>
         </div>
         <div id="container">
-            <div class="container grid wide">
-                <div class="container_slide">
-                    <div class="slide">
-                        <img class="slide_img" src="./img/slide_1.png" alt="slide 1">
-                        <img class="slide_img" src="./img/slide_2.png" alt="slide 2">
+            <div class="container grid wide" style="margin-top: 50px;">
+                <div class="content_navbar">
+                    <div class="content_navbar-list">
+                        <a href="#container_content" class="content_navbar-item">
+                            <i class="fas fa-bars"></i>
+                            Danh mục
+                            <ul class="navbar-item_list">
+                                <li class="navbar-item_list-item">Tất cả sản phẩm</li>
+                                <li class="navbar-item_list-item">Bắp Và Bông Cải</li>
+                                <li class="navbar-item_list-item">Bầu Và Bí</li>
+                                <li class="navbar-item_list-item">Củ, Quả Tươi</li>
+                                <li class="navbar-item_list-item">Rau Xanh</li>
+                                <li class="navbar-item_list-item">Ớt, Ớt Chuông</li>
+                                <li class="navbar-item_list-item">Nấm Tươi</li>
+                                <li class="navbar-item_list-item">Khoai</li>
+                            </ul>
+                        </a>
+                        <a href="./nutrition.html" class="content_navbar-item">
+                            <i class="fab fa-nutritionix"></i>
+                            Blog dinh dưỡng
+                        </a>
+                    </div>
+                    <div class="content_navbar-list">
+                        <a href="./index.html" class="content_navbar-item">
+                            <i class="fas fa-home"></i>
+                            Trang chủ
+                        </a>
+                        <a href="./contact.html" class="content_navbar-item">
+                            <i class="fab fa-facebook-messenger"></i>
+                            Liên hệ
+                        </a >
                     </div>
                 </div>
-                <div id="container_content" class="container_content">
-                    <div class="content_navbar">
-                        <div class="content_navbar-list">
-                            <a href="#container_content" class="content_navbar-item">
-                                <i class="fas fa-bars"></i>
-                                Danh mục
-                                <ul class="navbar-item_list">
-                                    <li class="navbar-item_list-item">Tất cả sản phẩm</li>
-                                    <li class="navbar-item_list-item">Bắp Và Bông Cải</li>
-                                    <li class="navbar-item_list-item">Bầu Và Bí</li>
-                                    <li class="navbar-item_list-item">Củ, Quả Tươi</li>
-                                    <li class="navbar-item_list-item">Rau Xanh</li>
-                                    <li class="navbar-item_list-item">Ớt, Ớt Chuông</li>
-                                    <li class="navbar-item_list-item">Nấm Tươi</li>
-                                    <li class="navbar-item_list-item">Khoai</li>
-                                </ul>
-                            </a href="#">
-                            <a href="./nutrition.html" class="content_navbar-item">
-                                <i class="fab fa-nutritionix"></i>
-                                Blog dinh dưỡng
-                            </a>
-                        </div>
-                        <div class="content_navbar-list">
-                            <a href="#" class="content_navbar-item">
-                                <i class="fas fa-home"></i>
-                                Trang chủ
-                            </a>
-                            <a href="./contact.html" class="content_navbar-item">
-                                <i class="fab fa-facebook-messenger"></i>
-                                Liên hệ
-                            </a >
-                        </div>
+                <div class="container--cart row">
+                    <div class="cart__content-left col c-12 m-12 l-8">
                     </div>
-                    <div class="content_list row col">
+                    <div class="cart__content-right col c-12 m-12 l-4">
+                        <h3 class="cart__content-heading">THANH TOÁN</h3>
+                        <div class="box-cost">
+                            <p><span class="item-text">Tạm tính</span><span class="item-cost tamp">0đ</span></p>
+                            <p><span class="item-text">Thuế </span> <span class="item-cost VAT">5%</span></p>
+                            <p><span class="item-text">Vận chuyển</span><span class="item-cost transport">40000đ</span></p>
+                            <p class="sum-cost"><span class="item-text"><b>Tổng tiền</b></span><span class="item-cost sum">0đ</span></p>
+                        </div>
+                        <button class="buy-btn">Thanh toán</button>
                     </div>
-                    <div class="content__navbar">
-                        <button class="content__navbar-btn content__navbar-btn--left fas fa-chevron-left"></button>
-                        <ul class="content__navbar-list">
-                            <li class="content__navbar-item item--first content__navbar-item--focus" value="0">1</li>
-                            <li class="content__navbar-item item--second" value="1">2</li>
-                            <li class="content__navbar-item item--third" value="2">3</li>
-                            <li class="content__navbar-item item--last" value="3">4</li>
-                        </ul>
-                        <button class="content__navbar-btn content__navbar-btn--right fas fa-chevron-right"></button>
+                </div>
+                <div class="cart-modal display--none">
+                    <div class="modal-content">
+                        <div class="modal-content__header">
+                            <h2>THANH TOÁN</h2>
+                        </div>
+                        <div class="modal-content__content">
+                            <form action="" method="post" name="form">
+                                <div class="cart__content-item">
+                                    <h4>Ngày nhận hàng</h4>
+                                    <input type="date">
+                                </div>
+                                <div class="cart__content-item">
+                                    <h4>Số điện thoại liên lạc</h4>
+                                    <input required pattern="\d{10}" type="tel">
+                                </div>
+                                <div class="cart__content-item">
+                                    <h4>Địa chỉ nhận hàng</h4>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </div>
+                                <div class="cart__content-item">
+                                    <h4>Thời gian nhân hàng</h4>
+                                    <select name="time" id="">
+                                        <option value="1">Nhanh</option>
+                                        <option value="2">2 giờ</option>
+                                        <option value="3">Trong ngày</option>
+                                    </select>
+                                </div>
+                                <div class="modal__choice cart__content-item">
+                                    <h4>Phương thức thanh toán</h4>
+                                    <div class="list-pay">
+                                        <a href="">
+                                            <img src="./img/momo-icon.png" alt="" width="50">
+                                        </a>
+                                        <a href="">
+                                            <img src="./img/pay-icon.png" alt="" width="50">
+                                        </a>
+                                        <a href="">
+                                            <img src="./img/zalopay-icon.png" alt="" width="50">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="modal__btn">
+                                    <button class="modal__btn-exit btn-exit">Hủy</button>
+                                    <button class="modal__btn-submit btn-submit">Thanh Toán</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div id="footer">
             <div class="footer grid wide">
                 <div class="footer_heading">
@@ -190,29 +231,10 @@
                 </div>
             </div>
         </div>
-
     </div>
     <script type="text/javascript" src="./js/data.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slide').slick({
-                // slidesToShow: 3,
-                // slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                infinite: true,
-                dots: true,
-                
-            });
-            const btnPrev = document.querySelector('.slick-prev');
-            const btnNext = document.querySelector('.slick-next');
-            btnPrev.innerHTML = '<i class="fas fa-chevron-left"></i>';
-            btnNext.innerHTML = '<i class="fas fa-chevron-right"></i>';
-        });
     </script>
 </body>
 </html>
